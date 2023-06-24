@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function onChange() {
+            const password = document.querySelector('input[name=pwd]');
+            const confirm = document.querySelector('input[name=confpwd');
+            if (confirm.value === password.value) {
+                confirm.setCustomValidity('');
+            } else {
+                confirm.setCustomValidity('Passwords do not match.')
+            }
+        }
+    </script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -12,7 +23,7 @@
         <div class="leftbkgr">
             <h1><img src="img/odin-lined.png" alt="Odin Logo" id="odin-logo"> The Odin Project</h1>
         </div>
-        <div class="credits">Photo by <a href="">Daniel Stuben</a> on <a href="">Unsplash</a></div>
+        <div class="credits">Photo by <a href="https://unsplash.com/@dxstub">Daniel Stuben</a> on <a href="https://unsplash.com/photos/XdqYc0QKI_A">Unsplash</a></div>
     </div>
 
     <form>
@@ -32,11 +43,11 @@
             <div class="row">
                 <div class="item">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="fname" id="first-name" required>
+                    <input type="text" name="fname" id="first-name" pattern="[A-Za-z]+" required>
                 </div>
                 <div class="item">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="lname" id="last-name" required>
+                    <input type="text" name="lname" id="last-name" pattern="[A-Za-z]+" required>
                 </div>
             </div>
             
@@ -47,7 +58,7 @@
                 </div>
                 <div class="item">
                     <label for="phone">PHONE</label>
-                    <input type="number" name="phone" id="phone" required maxlength="11" minlength="10">
+                    <input type="text" name="phone" id="phone" maxlength="10" pattern="[1-9]{1}[0-9]{9}" title="Phone Number - no spaces or dashes" required>
                 </div>
             </div>
             
@@ -58,7 +69,7 @@
                 </div>
                 <div class="item">
                     <label for="confpwd">CONFIRM PASSWORD</label>
-                    <input type="password" name="confpwd" id="confpwd">
+                    <input type="password" name="confpwd" id="confpwd" required onchange="onChange()">
                 </div>
             </div>
             
