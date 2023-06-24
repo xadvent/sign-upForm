@@ -1,0 +1,79 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width:50vw;
+    margin-right: 30px;
+}
+#odin-logo {
+    width: 60px;
+    height: auto;
+}
+
+img {
+    position: relative;
+    top: 30px;
+}
+
+
+
+.leftside {
+    width: 40vw;
+    background-image: url("img/daniel-stuben-unsplash.jpg");
+    
+    background-position-x: 50%;
+    background-size: cover;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.leftside h1 {
+    margin-top: 30vh;
+}
+
+
+.form-header {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 20px;
+}
+
+
+form .form-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+form:not(.form-content){
+    background-color: whitesmoke;
+}
+
+
+.form-content label {
+    text-align: right;
+    width: 120px;
+}
+
+.form-content input {
+    width: 120px;
+}

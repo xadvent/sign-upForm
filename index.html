@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="leftside">
+        <div class="leftbkgr">
+            <h1><img src="img/odin-lined.png" alt="Odin Logo" id="odin-logo"> The Odin Project</h1>
+        </div>
+    </div>
+
+    <form>
+        <div class="form-header">
+            <span class="span-start">
+                This is not a real service! You know you need something like this in your life
+                to help you realize your deepest dreams.
+            </span>
+            <span>Sign up <em>now</em> to get started.</span>
+            <span>You <em>know</em> you want to.</span>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="fname" id="first-name" required>
+            </div>
+            <div class="row">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="lname" id="last-name" required>
+            </div>
+            <div class="row">
+                <label for="email">EMAIL</label>
+                <input type="email" name="userMail" id="email" required>
+            </div>
+            <div class="row">
+                <label for="phone">PHONE</label>
+                <input type="number" name="phone" id="phone" required>
+            </div>
+            <div class="row">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" name="pwd" id="pwd" required>
+            </div>
+            <div class="row">
+                <label for="confpwd">CONFIRM PASSWORD</label>
+                <input type="password" name="confpwd" id="confpwd">
+            </div>
+        </div>
+
+        <div class="button"><button type="submit">Create Account</button></div>
+        <div class="smallText">Already have an account? <a href="index.html">Log in</a></div>
+
+    </form>
+    
+</body>
+</html>
