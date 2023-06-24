@@ -12,46 +12,59 @@
         <div class="leftbkgr">
             <h1><img src="img/odin-lined.png" alt="Odin Logo" id="odin-logo"> The Odin Project</h1>
         </div>
+        <div class="credits">Photo by <a href="">Daniel Stuben</a> on <a href="">Unsplash</a></div>
     </div>
 
     <form>
         <div class="form-header">
-            <span class="span-start">
-                This is not a real service! You know you need something like this in your life
-                to help you realize your deepest dreams.
-            </span>
-            <span>Sign up <em>now</em> to get started.</span>
+            <div>
+                <span class="span-start">
+                    This is not a real service! You know you need something like this in your life
+                    to help you realize your deepest dreams.
+                </span>
+                <span>Sign up <em>now</em> to get started.</span>
+            </div>
             <span>You <em>know</em> you want to.</span>
         </div>
 
         <div class="form-content">
+            <legend>Let's do this!</legend>
             <div class="row">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="fname" id="first-name" required>
+                <div class="item">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="fname" id="first-name" required>
+                </div>
+                <div class="item">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="lname" id="last-name" required>
+                </div>
             </div>
+            
             <div class="row">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="lname" id="last-name" required>
+                <div class="item">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="userMail" id="email" required placeholder="person@website.extension">
+                </div>
+                <div class="item">
+                    <label for="phone">PHONE</label>
+                    <input type="number" name="phone" id="phone" required maxlength="11" minlength="10">
+                </div>
             </div>
+            
             <div class="row">
-                <label for="email">EMAIL</label>
-                <input type="email" name="userMail" id="email" required>
+                <div class="item">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd" required>
+                </div>
+                <div class="item">
+                    <label for="confpwd">CONFIRM PASSWORD</label>
+                    <input type="password" name="confpwd" id="confpwd">
+                </div>
             </div>
-            <div class="row">
-                <label for="phone">PHONE</label>
-                <input type="number" name="phone" id="phone" required>
-            </div>
-            <div class="row">
-                <label for="pwd">PASSWORD</label>
-                <input type="password" name="pwd" id="pwd" required>
-            </div>
-            <div class="row">
-                <label for="confpwd">CONFIRM PASSWORD</label>
-                <input type="password" name="confpwd" id="confpwd">
-            </div>
+            
         </div>
 
-        <div class="button"><button type="submit">Create Account</button></div>
+        <div><button class="button" type="submit">Create Account</button></div>
         <div class="smallText">Already have an account? <a href="index.html">Log in</a></div>
 
     </form>
